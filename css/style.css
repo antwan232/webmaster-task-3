@@ -1,0 +1,43 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+	scroll-padding-top: 2rem;
+}
+html {
+	scroll-behavior: smooth;
+}
+/* custom scroll bar */
+html::-webkit-scrollbar {
+	width: 0.5rem;
+	background-color: var(--text-color);
+}
+html::-webkit-scrollbar-thumb {
+	background-color: var(--main-color);
+	border-radius: 5rem;
+}
+/* custom scroll bar */
+:root {
+	--main-color: #ff2c1f;
+	--text-color: #020307;
+	--bg-color: #fff;
+}
+header.shadow {
+	background-color: var(--bg-color);
+	box-shadow: 0 0 4px rgb(14 55 54 / 15%);
+}
+header.shadow .navbar a {
+	color: var(--text-color);
+}
+header.shadow .logo {
+	color: var(--text-color);
+}
+.navbar a:hover::after,
+.navbar .home-active::after {
+	width: 100%;
+}
+header.shadow #menu-icon {
+	color: var(--text-color);
+}
